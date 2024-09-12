@@ -1,7 +1,15 @@
-import "./App.css";
-
 function App() {
-  return <div>App</div>;
-}
+  return (
+    <div>
+      <div>
+        <h1>
+          Our Testimonial
+        </h1>
+        <div></div>
+        <Testimonials/> component
+      </div>
+    </div>
+  );
+};
 
 export default App;
