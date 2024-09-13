@@ -1,5 +1,4 @@
 import {Card} from 'Testimonial'
-import reviews from '../data';
 
 export const Testimonials = () => {
   return (
