@@ -1,9 +1,10 @@
 import {Card} from 'Testimonial'
+import reviews from '../data';
 
 export const Testimonials = () => {
   return (
     <div>
-      <Card></Card>
+      <Card review = {reviews[0]}></Card>
     </div>
   );
 };

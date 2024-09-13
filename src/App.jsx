@@ -1,5 +1,5 @@
-import {Testimonial} from 'react'
-import {reviews} from './data'
+import {Testimonial} from 'react';
+import { reviews } from './data';
 
 function App() {
   return (
