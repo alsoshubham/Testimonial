@@ -1,4 +1,4 @@
-import {Testimonial} from 'react';
+import { Testimonials } from './components/Testimonial';
 import { reviews } from './data';
 
 function App() {
@@ -9,7 +9,8 @@ function App() {
           Our Testimonial
         </h1>
         <div></div>
-        <Testimonial reviews={reviews}/>
+        <Testimonials reviews={reviews}/>
+
       </div>
     </div>
   );

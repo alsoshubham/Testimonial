@@ -1,9 +1,10 @@
-import {Card} from 'Testimonial'
+import { Card } from "./Card";
 
-export const Testimonials = () => {
+// eslint-disable-next-line react/prop-types
+export const Testimonials = ({reviews}) => {
   return (
     <div>
-      <Card review = {reviews[0]}></Card>
+      <Card reviews={reviews[0]}/>
     </div>
   );
 };

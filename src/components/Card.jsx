@@ -1,34 +1,35 @@
-import reviews from "../data";
-
-export const Card = () => {
-    
+import { FaQuoteLeft } from "react-icons/fa";
+import { FaQuoteRight } from "react-icons/fa";
+/* eslint-disable react/prop-types */
+export const Card = ({ reviews }) => {
   return (
     <div>
-        <div>
-            <img src={reviews.image}/>
-        </div>
-        <div>
-            <p>{reviews.name}</p>
-        </div>
-        <div>
-            <p>{reviews.job}</p>
-        </div>
-        <div>
-       
-        </div>
-        <div>
-            {reviews.text}
-        </div>
+      <div>
+        <img src={reviews.image} />
+      </div>
+      <div>
+        <p>{reviews.name}</p>
+      </div>
+      <div>
+        <p>{reviews.job}</p>
+      </div>
+      <div>
+        <FaQuoteLeft />
+      </div>
+      <div>{reviews.text}</div>
+      <div>
+        <FaQuoteRight />
+      </div>
+      <div>
+        <button>+ </button>
+        <button>-</button>
+      </div>
+      <div>
+        <button>Surprise Me</button>
+      </div>
     </div>
   );
 };
-
-
-
-
-
-
-
 
 // <div
 // style={{display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 20 }}>
