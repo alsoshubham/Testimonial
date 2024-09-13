@@ -1,3 +1,6 @@
+import {Testimonial} from 'react'
+import {reviews} from './data'
+
 function App() {
   return (
     <div>
@@ -6,7 +9,7 @@ function App() {
           Our Testimonial
         </h1>
         <div></div>
-        <Testimonials/> component
+        <Testimonial reviews={reviews}/>
       </div>
     </div>
   );
