@@ -7,7 +7,7 @@ import { FaChevronLeft } from "react-icons/fa";
 
  
 export const Testimonials = ({reviews}) => {
-  const[index, setIndex] = useState();
+  const[index, setIndex] = useState(0);
   function LeftShiftHandler(){
     if(index-1 <0){
       setIndex(reviews.length -1);
@@ -33,7 +33,8 @@ export const Testimonials = ({reviews}) => {
   }
   
   return (
-    <div>
+    <div className="w-[85vw] md:w-[700px] bg-white flex flex-col justify-center items-center
+    mt-10 p-10 trasnition-all duration-700 hover:shadow-lg">
       <Card reviews={reviews[index]}/>
       <div className="flex justify-center text-3xl mt-5 gap-3 text-violet-400 font-bold">
         <button onClick={LeftShiftHandler} className="cursor-pointer hover:text-violet-600"><FaChevronLeft /> </button>

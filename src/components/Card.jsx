@@ -9,8 +9,8 @@ export const Card = ({ reviews }) => {
        className="absolute top-[-7rem] z-10 mx-auto">
         <img className="aspect-square rounded-full w-[140px] h-[140px] z-25"
          src={reviews.image}/>
-         <div className="aspect-square rounded-full bg-violet-600 w-[140px] h-[140px] z-[1]
-         top-[-6px] left-[10px]"></div>
+         {/* <div className="aspect-square rounded-full bg-violet-600 w-[140px] h-[140px] z-[1]
+         top-[-6px] left-[10px]"></div> */}
       </div>
       <div className="text-center mt-7">
         <p className="font-bold text-2xl capitalize">{reviews.name}</p>
