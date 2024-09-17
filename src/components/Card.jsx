@@ -1,47 +1,32 @@
 import { FaQuoteLeft } from "react-icons/fa";
 import { FaQuoteRight } from "react-icons/fa";
+
 /* eslint-disable react/prop-types */
 export const Card = ({ reviews }) => {
   return (
-    <div>
-      <div>
-        <img src={reviews.image} />
+    <div className="flex flex-col md:relative">
+      <div
+       className="absolute top-[-7rem] z-10 mx-auto">
+        <img className="aspect-square rounded-full w-[140px] h-[140px] z-25"
+         src={reviews.image}/>
+         <div className="aspect-square rounded-full bg-violet-600 w-[140px] h-[140px] z-[1]
+         top-[-6px] left-[10px]"></div>
       </div>
-      <div>
-        <p>{reviews.name}</p>
+      <div className="text-center mt-7">
+        <p className="font-bold text-2xl capitalize">{reviews.name}</p>
       </div>
-      <div>
-        <p>{reviews.job}</p>
+      <div className="text-center mt-7">
+        <p className="text-violet-400 uppercase text-sm">{reviews.job}</p>
       </div>
-      <div>
+      <div className="text-violet-400 mx-auto mt-5">
         <FaQuoteLeft />
       </div>
-      <div>{reviews.text}</div>
-      <div>
+      <div className="text-center mt-5 text-slate-500">
+        {reviews.text}
+      </div>
+      <div className="text-violet-400 mx-auto mt-5">
         <FaQuoteRight />
-      </div>
-      <div>
-        <button>+ </button>
-        <button>-</button>
-      </div>
-      <div>
-        <button>Surprise Me</button>
       </div>
     </div>
   );
 };
-
-// <div
-// style={{display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 20 }}>
-// <div>
-//   <h3>Shubham Shah</h3>
-//   <h4>Frontend Developer</h4>
-// </div>
-// </div>
-// <p>
-// Shubham is an exceptional frontend developer. His attention to detail
-// and dedication to creating seamless user experiences have significantly
-// improved our product. He consistently delivers high-quality work and is
-// a pleasure to work with.
-// </p>
-// <button>Surprise Me</button>
